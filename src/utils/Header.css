@@ -1,0 +1,105 @@
+
+.header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Header Container */
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.nav-item:hover {
+  color: #f8f9fa;
+  transform: scale(1.05);
+}
+
+/* Cart Icon */
+.cart {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 20px; /* Add space to the right of the cart text */
+}
+
+/* Cart Count Styling */
+.cart-count {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 6px 12px; /* Increase padding for more spacing */
+  position: absolute;
+  top: -10px; /* Give space above */
+  right: -10px; /* Adjust this to move it further to the right */
+  font-family: Arial, sans-serif;
+  z-index: 10; /* Ensure it's on top */
+}
+
+
+/* Search Bar */
+.search-bar {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 250px;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar:focus {
+  background-color: #f1f1f1;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
